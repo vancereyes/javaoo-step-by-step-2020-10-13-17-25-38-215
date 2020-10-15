@@ -13,11 +13,13 @@ public class Student extends Person {
         return klass;
     }
 
+
+    @Override
     public String introduce(){
         if(klass.getLeader() != this) {
             return String.format("%s I am a Student. I am at %s.", super.introduce(), klass.getDisplayName());
         } else {
-            return String.format("%s I am a Student. I am Leader of Class %d.", super.introduce(), klass.getNumber());
+            return String.format("%s I am a Student. I am Leader of %s.", super.introduce(), klass.getDisplayName());
         }
         }
 }

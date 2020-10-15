@@ -6,7 +6,8 @@ public class Worker extends Person{
         super(name, age);
     }
 
+    @Override
     public String introduce(){
-        return String.format("My name is %s. I am %d years old. I am a Worker. I have a job.",name,age);
+        return String.format("%s I am a Worker. I have a job.",super.introduce());
     }
 }

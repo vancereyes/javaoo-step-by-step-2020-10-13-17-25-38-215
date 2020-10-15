@@ -2,7 +2,7 @@ package practice03;
 
 public class Student extends Person {
 
-    int klass;
+    private int klass;
 
     public Student(String name, int age, int klass) {
         super(name, age);
@@ -18,6 +18,7 @@ public class Student extends Person {
         this.klass = klass;
     }
 
+    @Override
     public String introduce(){
 
         return String.format("I am a Student. I am at Class %d.",klass);

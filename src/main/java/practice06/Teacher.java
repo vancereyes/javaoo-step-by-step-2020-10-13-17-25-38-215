@@ -2,6 +2,7 @@ package practice06;
 
 public class Teacher extends Person {
 
+    public static final String TEACHER = "I am a Teacher. I teach";
     private int klass;
 
     public Teacher(String name, int age, int klass) {
@@ -19,13 +20,15 @@ public class Teacher extends Person {
         return klass;
     }
 
+
+    @Override
     public String introduce(){
 
         if (klass == 0){
-            return String.format("%s I am a Teacher. I teach No Class.", super.introduce());
+            return String.format("%s " + TEACHER + " No Class.", super.introduce());
         }
 
-            return String.format("My name is %s. I am %d years old. I am a Teacher. I teach Class %d.",name,age,klass);
+            return String.format("%s " + TEACHER + " Class %d.",super.introduce(),klass);
     }
 
 }

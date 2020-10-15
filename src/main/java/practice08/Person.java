@@ -1,7 +1,5 @@
 package practice08;
 
-import java.util.Objects;
-
 public class Person {
     int id;
     String name;
@@ -30,7 +28,7 @@ public class Person {
         return age;
     }
 
-    public String introduce(){
+    public String introduce() {
         return "My name is Tom. I am 21 years old.";
     }
 }
